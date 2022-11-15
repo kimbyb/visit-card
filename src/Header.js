@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 function Header() {
   return (
     <header className="text-center">
-      <div className="h-80 w-80 ">
+      <div className="h-80 w-70 ">
         {" "}
         <img
           src={headshot}
@@ -16,12 +16,16 @@ function Header() {
       <h2 className="text-amber-300 text-sm">Frontend Developer</h2>
       <h2 className="text-xs text-slate-400	mb-3	"> mywebsite.com</h2>
       <div className="inline-flex p- grid-gap-4">
-        <button className="bg-sky-600	text-white	w-28  place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex mr-2.5 h-8	">
-          <BsLinkedin /> LinkedIn
-        </button>
-        <button className="bg-gray-50	w-28 place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex	h-8">
-          <MdEmail /> Email
-        </button>
+        <a href="https://www.linkedin.com/">
+          <button className="bg-sky-600	text-white	w-28  place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex mr-2.5 h-8	">
+            <BsLinkedin /> LinkedIn
+          </button>
+        </a>
+        <a href="">
+          <button className="bg-gray-50	w-28 place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex	h-8">
+            <MdEmail /> Email
+          </button>
+        </a>
       </div>
     </header>
   );
