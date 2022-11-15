@@ -14,13 +14,15 @@ function Header() {
 
       <h1 className="text-4xl text-white	font-bold">Laura Smith</h1>
       <h2 className="text-amber-300 text-sm">Frontend Developer</h2>
-      <h2 className="text-xs text-slate-400	"> mywebsite.com</h2>
-      <button className="text-white w-5">
-        <BsLinkedin /> LinkedIn
-      </button>
-      <button className="bg-gray-50	w-20  place-content-center rounded-md grid grid-cols-1 place-items-center p-0.5">
-        <MdEmail /> Email
-      </button>
+      <h2 className="text-xs text-slate-400	mb-3	"> mywebsite.com</h2>
+      <div className="inline-flex p- grid-gap-4">
+        <button className="bg-sky-600	text-white	w-28  place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex mr-2.5 h-8	">
+          <BsLinkedin /> LinkedIn
+        </button>
+        <button className="bg-gray-50	w-28 place-content-center rounded-md  grid-cols-1 place-items-center p-0.5 text-sm inline-flex	h-8">
+          <MdEmail /> Email
+        </button>
+      </div>
     </header>
   );
 }
